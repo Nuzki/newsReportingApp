@@ -8,6 +8,7 @@ Step 2: Add an Android App
 Inside Firebase Console, click on "Add App" and choose Android.
 Enter the package name (must match your app’s package name in AndroidManifest.xml).
 Click "Register app".
+
 Step 3: Download google-services.json
 After registering the app, Firebase provides a google-services.json file.
 Click "Download google-services.json".
