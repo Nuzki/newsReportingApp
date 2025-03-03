@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" tools:targetApi="33" />
+
+    <application
+        android:name=".NewsHeadlinesApp"
+        android:allowBackup="true"
+        android:icon="@drawable/app_logo_2"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.NewsHeadlines"
+        tools:targetApi="33">
+
+        <activity
+            android:name=".OnboardingActivity"
+            android:exported="true"
+            android:theme="@style/Theme.NewsHeadlines">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".LoginActivity" android:exported="false" android:theme="@style/Theme.NewsHeadlines" />
+        <activity android:name=".MainPage" android:exported="false" android:theme="@style/Theme.NewsHeadlines" />
+        <activity android:name=".RegistrationActivity" android:exported="false" android:theme="@style/Theme.NewsHeadlines" />
+        <activity android:name=".DisplayNewsActivity" android:exported="false" android:theme="@style/Theme.NewsHeadlines" />
+        <activity android:name=".PublishArticleActivity" android:exported="false" android:theme="@style/Theme.NewsHeadlines" />
+        <activity android:name=".AdminDashboardActivity" android:exported="false" android:theme="@style/Theme.NewsHeadlines" />
+        <activity android:name=".ProfileActivity" android:exported="false" android:theme="@style/Theme.NewsHeadlines" />
+    </application>
+</manifest>

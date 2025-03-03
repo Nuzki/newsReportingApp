@@ -1,0 +1,112 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'com.google.gms.google-services'
+    id 'org.jetbrains.kotlin.plugin.compose' version '2.1.0'
+}
+
+android {
+    namespace 'com.example.newsheadlines'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId "com.example.newsheadlines"
+        minSdk 23
+        targetSdk 35
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    kotlinOptions {
+        jvmTarget = '17'
+    }
+
+    buildFeatures {
+        compose true
+    }
+
+    composeOptions {
+        kotlinCompilerExtensionVersion '2.1.0'
+    }
+
+    packaging {
+        resources.excludes += '/META-INF/{AL2.0,LGPL2.1}'
+    }
+}
+
+dependencies {
+    // Core dependencies
+    implementation 'androidx.core:core-ktx:1.13.1'
+    implementation 'androidx.appcompat:appcompat:1.7.0'
+    implementation 'com.google.android.material:material:1.12.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+
+        implementation platform('com.google.firebase:firebase-bom:33.9.0')
+        implementation 'com.google.firebase:firebase-database'
+        implementation 'com.google.firebase:firebase-auth'
+        implementation 'com.google.firebase:firebase-appcheck-playintegrity:17.0.0'
+        implementation 'androidx.activity:activity-compose:1.9.0'
+        implementation 'androidx.compose.material:material:1.7.0'
+        implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.8.0' // For lifecycleScope
+        implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.8.0' // For coroutines
+    implementation 'com.google.firebase:firebase-appcheck-debug:17.0.0'
+    implementation 'com.google.firebase:firebase-database-ktx'
+    implementation 'com.google.firebase:firebase-functions-ktx'
+    implementation "androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0"
+
+    // Google Sign-In and Credentials
+    implementation 'androidx.credentials:credentials:1.3.0'
+    implementation 'androidx.credentials:credentials-play-services-auth:1.3.0'
+    implementation 'com.google.android.libraries.identity.googleid:googleid:1.1.1'
+    implementation 'androidx.room:room-common:2.6.1'
+    implementation 'com.google.firebase:firebase-messaging-ktx:24.1.0'
+    implementation 'com.google.firebase:firebase-appcheck-debug:18.0.0'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3'
+    implementation 'com.google.firebase:firebase-storage-ktx:21.0.1'
+    // Jetpack Compose dependencies
+    def compose_version = "1.7.4"
+    def lifecycle_version = "2.8.6"
+    def coil_version = "2.7.0"
+
+    implementation "androidx.activity:activity-compose:1.9.3"
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:$lifecycle_version"
+    implementation "androidx.compose.ui:ui:$compose_version"
+    implementation "androidx.compose.material:material:$compose_version"
+    implementation "androidx.compose.material:material-icons-extended:$compose_version"
+    implementation "androidx.compose.ui:ui-tooling-preview:$compose_version"
+    debugImplementation "androidx.compose.ui:ui-tooling:$compose_version"
+    debugImplementation "androidx.compose.ui:ui-test-manifest:$compose_version"
+    implementation 'com.google.android.material:material:1.12.0'
+    // Compose Pager
+    implementation "androidx.compose.foundation:foundation:$compose_version"
+
+    // Coil for image loading
+    implementation "io.coil-kt:coil-compose:$coil_version"
+
+    // JetBrains Annotations
+    implementation "org.jetbrains:annotations:24.1.0"
+    configurations.all {
+        exclude group: "com.intellij", module: "annotations"
+    }
+
+    // Testing dependencies
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.2.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.6.1'
+    androidTestImplementation "androidx.compose.ui:ui-test-junit4:$compose_version"
+}

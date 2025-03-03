@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="primary">#6200EE</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="add_comment">Add a comment</string>
+    <string name="admin_dashboard">Admin Dashboard</string>
+    <string name="analytics">Analytics</string>
+    <string name="app_name">InfoSync</string>
+    <string name="approve">Approve</string>
+    <string name="browse">Browse</string>
+    <string name="browse_desc">Read articles from various categories and sources.</string>
+    <string name="bulk_approve">Bulk Approve</string>
+    <string name="bulk_decline">Bulk Decline</string>
+    <string name="bulk_delete">Bulk Delete</string>
+    <string name="button_publish">Publish Article</string>
+    <string name="decline">Decline</string>
+    <string name="delete">Delete</string>
+    <string name="description">Description</string>
+    <string name="edit_approve">Edit and Approve</string>
+    <string name="favorite_article">Bookmark</string>
+    <string name="favorites">Favorites</string>
+    <string name="filter_category">Filter by Category</string>
+    <string name="firebase_database_url" translatable="false">https://newsheadline-789b0-default-rtdb.asia-southeast1.firebasedatabase.app</string>
+    <string name="gcm_defaultSenderId" translatable="false">794470868662</string>
+    <string name="get_started">Get Started</string>
+    <string name="google_api_key" translatable="false">AIzaSyBbYnYCUgtaacYVoW2EJmUZUFQesI0avtU</string>
+    <string name="google_app_id" translatable="false">1:794470868662:android:8fe23587a3884e2833e817</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBbYnYCUgtaacYVoW2EJmUZUFQesI0avtU</string>
+    <string name="google_storage_bucket" translatable="false">newsheadline-789b0.firebasestorage.app</string>
+    <string name="guest_login">View as Guest</string>
+    <string name="hint_article_description">Enter Article Description</string>
+    <string name="hint_article_title">Enter Article Title</string>
+    <string name="hint_image_url">Enter Image URL</string>
+    <string name="hint_tags">Enter Tags (comma-separated)</string>
+    <string name="interact">Interact</string>
+    <string name="interact_desc">Rate, comment, and share your favorite stories.</string>
+    <string name="like_article">Like</string>
+    <string name="login">Log In</string>
+    <string name="logout">Logout</string>
+    <string name="my_articles">My Articles</string>
+    <string name="next">Next</string>
+    <string name="no_articles">No articles available</string>
+    <string name="pending_articles">Pending Articles</string>
+    <string name="pick_image">Pick Image</string>
+    <string name="post_comment">Post Comment</string>
+    <string name="previous">Previous</string>
+    <string name="profile">Profile</string>
+    <string name="project_id" translatable="false">newsheadline-789b0</string>
+    <string name="publish_article">Publish Article</string>
+    <string name="published_articles">Published Articles</string>
+    <string name="rate_article">Rate this Article</string>
+    <string name="register">Register</string>
+    <string name="reply">Reply</string>
+    <string name="search_articles">Search Articles</string>
+    <string name="share_article">Share</string>
+    <string name="sort_by">Sort By</string>
+    <string name="submit_approval">Submit for Approval</string>
+    <string name="title">Title</string>
+    <string name="title_activity_display_news">DisplayNews</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <string name="title_activity_main_page">MainPage</string>
+    <string name="title_activity_publish_article">Publish Article</string>
+    <string name="title_activity_registration">RegistrationActivity</string>
+    <string name="toggle_admin">Toggle Admin</string>
+    <string name="user_management">User Management</string>
+    <string name="welcome">Welcome</string>
+    <string name="welcome_desc">Explore the latest news with InfoSync!</string>
+    <style name="Theme.NewsHeadlines" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:statusBarColor">@color/purple_700</item>
+    </style>
+</resources>

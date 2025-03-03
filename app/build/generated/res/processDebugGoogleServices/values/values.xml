@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="firebase_database_url" translatable="false">https://newsheadline-789b0-default-rtdb.asia-southeast1.firebasedatabase.app</string>
+    <string name="gcm_defaultSenderId" translatable="false">794470868662</string>
+    <string name="google_api_key" translatable="false">AIzaSyBbYnYCUgtaacYVoW2EJmUZUFQesI0avtU</string>
+    <string name="google_app_id" translatable="false">1:794470868662:android:8fe23587a3884e2833e817</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBbYnYCUgtaacYVoW2EJmUZUFQesI0avtU</string>
+    <string name="google_storage_bucket" translatable="false">newsheadline-789b0.firebasestorage.app</string>
+    <string name="project_id" translatable="false">newsheadline-789b0</string>
+</resources>
